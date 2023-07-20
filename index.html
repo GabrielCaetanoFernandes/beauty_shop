@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Shop</title>
+    <!--Estilo-->
+    <link rel="stylesheet" href="estilo.css">
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/26d9a73e3c.js" crossorigin="anonymous"></script>
+    <!--Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #672984;">
+    <header>
+        <div class="container">
+            <h1>Beauty Shop</h1>
+            <form>
+                <input type="search" placeholder="Busque no site">
+                <button type="submit">Pesquisar</button>
+            </form>
+        <div class="botao-menu">
+            <button type="button" class="fa-solid fa-bars"></button>
+        </div>
+        </div>
+            <nav class="container">
+                <ul class="menu">
+                    <li>
+                        Categorias
+                        <ul class="submenu">
+                            <li>
+                                <a href="">Face</a>
+                            </li>
+                            <li>
+                                <a href="">Olhos</a>
+                            </li>
+                            <li>
+                                <a href="">Lábios</a>
+                            </li>
+                            <li>
+                                <a href="">Acessórios</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Marcas
+                        <ul class="submenu">
+                            <li>
+                                <a href="">Elf cosmetics</a>
+                            </li>
+                            <li>
+                                <a href="">Fenty beauty</a>
+                            </li>
+                            <li>
+                                <a href="">Huda Beauty</a>
+                            </li>
+                            <li>
+                                <a href="">Kaleidos</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#ctt">Contato</a>
+                    </li>
+                    <li>
+                        <a href="#sobre-a-loja">Sobre a loja</a>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+    <div class="container">
+        <section id="sobre-a-loja">
+            <div class="imagem">
+                <img src="./imagens/depósito.jpg" alt="Depósito Beauty shop">
+            </div>
+            <div class="conteudo">
+                <h2>Sobre a loja</h2>
+                <p>
+                    Beauty Shop nasce em 2018 com intuito de facilitar o processo de importação de cosméticos e acessórios de beleza em geral. Os produtos são comprados conforme demanda, consulte os prazos de entrega antes de finalizar a compra. Garantimos quaisquer taxas de importação, sem nenhum custo adicional.
+                </p>
+            </div>
+        </section>
+        <h2>Em destaque</h2>
+        <section class="destaque">
+            <div class="produto">
+                <img src="/imagens/gloss.jpg">
+                <h3>Gloss Bomb</h3>
+                <a href="">
+                    Gloss Fenty Beauty, disponível em várias cores.
+                </a>
+                <price>R$ 140,00</price>
+                <button type="submit" class="fa-solid fa-cart-plus"></button>
+                </div>
+                <div class="produto">
+                <img src="/imagens/huda.webp">
+                    <h3>Paleta Mercury Retrograde</h3>
+                    <a href="">
+                        Paleta de olhos 18 tons Mercury Retrograde Huda Beauty.
+                    </a>
+                    <price>R$ 569,90</price>
+                    <button type="submit" class="fa-solid fa-cart-plus"></button>
+                </div>
+                <div class="produto">
+                    <img src="/imagens/primer.jpg">
+                    <h3>Primer Poreless Putty</h3>
+                    <a href="">
+                        Primer de poros Elf cosmetics. Oil-free.
+                    </a>
+                    <price>R$ 190,00</price>
+                    <button type="submit" class="fa-solid fa-cart-plus"></button>
+                </div>
+                <div class="produto">
+                    <img src="/imagens/kaleidos.jpg">
+                    <h3>The Space Age Highlighter</h3>
+                <a href="">
+                    Iluminador facial Space Age. Disponível em diversas cores.
+                </a>
+                <price>R$ 172,00</price>
+                <button type="submit" class="fa-solid fa-cart-plus"></button>
+            </div>
+        </section>
+        <section id="ctt">
+            <div class="contato">
+                <h2>Faça seu orçamento:</h2>
+                <form>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome">
+                    <label for="phone">WhatsApp: </label>
+                    <input type="tel" name="phone" id="phone">
+                    <label for="mensagem">Sua mensagem</label>
+                    <textarea id="mensagem"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="redes">
+                <h2>Siga-nos nas redes:</h2>
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+                $(document).ready(function(){
+            $('.botao-menu button').click(function(){
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
+</body>
+</html>

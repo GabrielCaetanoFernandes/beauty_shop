@@ -1,0 +1,290 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
+}
+header{
+    padding: 16px 0 0;
+    margin-bottom: 56px;
+    border-bottom-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: #DB00FF;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d911dc00;
+}
+header nav li a,
+.produto a,
+.redes li i{
+    color:#f0daf8;
+}
+h1{
+    font-size: 2em;
+}
+h2{
+    font-size: 2em;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #D811DC;
+    color:#f0daf8;
+    border-radius: 6px;
+    padding: 8px;
+}
+.submenu{
+    display: none;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    width: 300px;
+    top: 100%;
+    background-color: #DB00FF;
+}
+
+.menu > li{
+    float: left;
+    list-style: none;
+    padding-top: 16px;
+    padding-left: 0;
+    padding-bottom: 16px;
+    padding-right: 16px;
+    border-top: 4px solid transparent;
+    cursor: pointer;
+    position: relative;
+}
+nav li a{
+    text-decoration: none;
+    color: #333;
+}
+nav li > ul li{
+    padding: 4px;
+    margin: 4px;
+}
+nav li > ul li:hover{
+    background-color: #D811DC;
+    text-decoration: underline;
+}
+nav li:hover .submenu{
+    display: block;
+}
+#sobre-a-loja img{
+    height: 250px;
+    max-width: 100%;
+}
+#sobre-a-loja{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-bottom: 32px;
+}
+.conteudo{
+    margin-left: 16px;
+    align-items: center;
+    font-size: 1.5em;
+}
+.conteudo h2{
+    margin-bottom: 16px;
+}
+.destaque{
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+}
+.destaque img{
+    height: 200px;
+    max-width: 100%;
+}
+.produto{
+    background-color: #6729847e;
+    padding: 8px;
+    border-radius: 6px;
+}
+.produto img{
+    border-radius: 8px;
+    margin-left: 15px;
+}
+.produto a{
+    display: block;
+    text-decoration: none;
+    padding: 6px;
+    margin: 8px 0;
+}
+.produto price{
+    width: 100%;
+    margin-bottom: 8px;
+}
+.produto button{
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    margin-left: 0;
+    border-radius: 6px;
+    padding: 4px;
+    background-color: #f0daf8;
+}
+#ctt form button:hover,
+.produto button:hover{
+    background-color: rgb(0, 255, 0);
+    cursor: pointer;
+    color: #f0daf8;
+}
+#ctt{
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    column-gap: 10%;
+}
+.contato{
+    align-self: center;
+}
+textarea{
+    resize: none;
+    width: 100%;
+    height: 100%;
+}
+.contato form textarea,
+.contato form input,
+.contato form Label,
+.contato form button{
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    height: 100%;
+    padding: 4px;
+}
+.redes{
+    display: block;
+}
+.redes > ul{
+    list-style: none;
+    display: flex;
+}
+.redes > ul li{
+    list-style: none;
+    text-decoration: none;
+    padding: 8px;
+    margin: 8px;
+}
+.redes ul li a i{
+    font-size: 3em;
+}
+.botao-menu{
+    display: none;
+}
+
+/*Media Queries*/
+@media screen and (max-width:640px){
+    .botao-menu{
+        display: block;
+        padding: 6px;
+        border-radius: 6px;
+        background-color: #DB00FF;
+    }
+    .container{
+        max-width: 90%;
+    }
+    #sobre-a-loja{
+        display: block;
+    }
+    .destaque{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .produto{
+        margin-top: 16px;
+    }
+    .produto img{
+        margin-left: 40px;
+    }
+    #ctt{
+        display: block;
+    }
+    #redes{
+        display: block;
+    }
+    .submenu{
+        display: block;
+        list-style: none;
+        position: relative;
+        width: 100%;
+        border: none;
+    }
+    .menu{
+        display: none;
+    }
+    .menu > li{
+        clear: both;
+    }
+    .submenu li{
+        display: block;
+        padding: 8px;
+    }
+    .botao-menu{
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        padding-bottom: 16px;
+    }
+    .botao-menu button{
+        padding: 8px;
+        background-color: #DB00FF;
+        color: #f0daf8;
+        border: none;
+    }
+    header div.container{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:641px) and (max-width:1023px){
+    .container{
+        max-width: 90%;
+    }
+    .botao-menu{
+        display: none;
+    }
+    #sobre-a-loja{
+        display: block;
+    }
+    #sobre-a-loja img{
+        height: 100%;
+    }
+    .menu > li{
+        float: left;
+        list-style: none;
+        padding-top: 16px;
+        padding-left: 0;
+        padding-bottom: 16px;
+        padding-right: 16px;
+        border-top: 4px solid transparent;
+        position: relative;
+    }
+    .destaque{
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        justify-content: space-between;
+    }
+    .produto{
+        margin-top: 16px;
+    }
+    #ctt{
+        display: block;
+    }
+    #redes{
+        display: block;
+        align-items: center;
+    }
+}
+@media screen and (min-width:1024px){
+    .botao-menu{
+        display: none;
+    }
+}
